@@ -89,7 +89,7 @@ The script includes simple helper functions to cover most use cases.
 | `stroke(keys, ...)` | `stroke("{Left 10}")`<br> `stroke("{AltDown}vt{AltUP})` | Sends a sequence of keys. Can simulate human typing with delays. |
 | `down("key")` | `Numpad1::down("Space")`      | Holds a key down.|
 | `up("key")` | `$*Numpad1 Up::up("Space")`     | Releases a key.|
-| `run, "File/FolderPath/Link"` |
+| `run, "File/FolderPath/Link"` | `run "notepad.exe"`| for foreign app like the one you install i.e. photoshop, you need full path |
 
 ### 💡 Hold-and-Release Keys (The Remap Pattern)
 To make one key act as another while held down (e.g., holding `NumpadEnter` to act as `Spacebar`), use this two-line pattern.
