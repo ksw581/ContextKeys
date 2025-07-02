@@ -1,8 +1,8 @@
 # ContextKeys
 *"Your keyboard gains situational awareness."*
-<div align="center" style="padding: 260px 120;">
+<div align="center" style="padding: 40px ;">
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/11cf5a57-d643-4391-8682-e54bb9900fe9" width="600" height="400" autoplay loop muted playsinline style="border-radius: 20px;"></video>
+  <video src="https://github.com/user-attachments/assets/11cf5a57-d643-4391-8682-e54bb9900fe9" width="600" height="400" autoplay loop muted playsinline style="border-radius: 8px;"></video>
 </p>
 </div>
 **ContextKeys** is a context-aware key remapper for Windows that changes your keyboard's behavior based on the currently active application. Perfect for juggling apps like Photoshop, VS Code, and your browser without finger gymnastics.
@@ -38,7 +38,7 @@ This script is written for **AutoHotkey v1.1** and is not compatible with v2.
 ### Installation & Setup
 1.  Download **`ContextKeys.zip`** from the latest release.
 2.  Extract/Unzip the file to a permanent location on your computer.
-3.  **Configure**: Right-click **`ContextKeys.ahk`** and select **`Edit Script`**. Add your custom remaps following the examples below.
+3.  **Configure**: Right-click **`ContextKeys.ahk`** and select **`Edit Script`**. Add your custom remaps following the **Usage & Customization**
 4.  **Run**: Save the script and double-click the `.ahk` file to run it.
 
 ### Autorun on Startup
@@ -114,13 +114,13 @@ $*Key Up::up("Target")
 
 ## 🛠️ Tips & Utilities
 
-*   **Finding Key Names:** Not sure what a key is called? Run the included `KeybdMon.ahk` script. It will display the name of any key you press. For a full list, see the [Official AutoHotkey v1 Key List](https://www.autohotkey.com/docs/v1/KeyList.htm).
+*   **Finding Key Names:** Not sure what a key is called? Click the `View Key History` inside tray menu. It will display the name of any key you press, make sure to constantly F5 because its not automatic. For a full list, see the [Official AutoHotkey v1 Key List](https://www.autohotkey.com/docs/v1/KeyList.htm).
 
 *   **Recommended Editor:** For a better experience, edit the script with [AHK-Studio](https://github.com/maestrith/AHK-Studio). Its autocomplete will help you find key names and commands instantly.
+> First, you need to open autohotkey dash, and edit the editor for AHK script to be AHK-Studio
 
-*   **Disabling Hotkeys Correctly:**
-    *   ✅ **To temporarily disable all hotkeys**: Right-click the tray icon and select **`Suspend Hotkeys`**.
-    *   ❌ **Do not use `Pause Script`**: This freezes the script but does *not* release any currently held keys, which can cause them to get "stuck".
+*   **Disabling Hotkeys:**
+    * **Good thing that I made the tray menu to be simple, you just need to click `Disable ContextKeys` and you can re-enable it easily.
 
 ---
 
