@@ -96,8 +96,8 @@ To make one key act as another while held down (e.g., holding `NumpadEnter` to a
 
 **Template:**
 ```autohotkey
-Trigger::down("Target")
-$*Trigger Up::up("Target")
+Key::down("Target")
+$*Key Up::up("Target")
 ```
 **Example: Using NumpadEnter as the Pan tool (`Space`) in Photoshop**
 ```autohotkey
