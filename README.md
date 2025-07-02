@@ -142,3 +142,11 @@ This script was forged on humble hardware and runs beautifully.
 -   **RAM**: 8GB DDR3
 -   **OS**: Windows 10 Pro 22H2
 -   **Tool**: AutoHotkey v1.1
+
+##  Support This Project
+
+I had a lot of fun building ContextKeys and I'm happy to share it with the community. While I don't have plans for major future updates myself, the project is open-source, and I hope it serves you well!
+
+If you've found this tool useful and want to say thanks for the work I've put in, you can buy me a coffee. It's greatly appreciated!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/ksw581)
