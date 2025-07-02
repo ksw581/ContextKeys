@@ -3,6 +3,11 @@
 
 **ContextKeys** is a context-aware key remapper for Windows that changes your keyboard's behavior based on the currently active application. Perfect for juggling apps like Photoshop, VS Code, and your browser without finger gymnastics.
 
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/11cf5a57-d643-4391-8682-e54bb9900fe9" width="600" height="400" autoplay loop muted playsinline style="border-radius: 8px;"></video>
+</p>
+
+
 Stop memorizing dozens of unique shortcuts—let your keyboard adapt to you.
 
 <p align="center">
