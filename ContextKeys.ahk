@@ -3,20 +3,20 @@ MsgBox, 0, Welcome to ContextKeys!,
 (
 Thank you for using ContextKeys!
 
-Everything you need is a Right-Click away on the tray icon!
+To get started, please click 'OK' to allow the script to fully load.
 
-Click "OK" to continue.
-Now go start editing and enjoy the boost to your productivity!
+After that, you can access everything—including the full Help documentation—by right-clicking the icon in your system tray.
+
+Enjoy the productivity boost!
 )
-
 
 ; Important! DO NOT ERASE THIS LINE!
 #Include lib\core\engine.ahk ; You will dead if you erase this line for sure
 ; Put this line on top
 
 
-
-; Comments start with a semicolon (;) Remember! It can be used as reminders.
+; This is a comment! Any line starting with a semicolon (;) is ignored by the script.
+; Use them to leave notes or temporarily disable hotkeys.
 
 
 ; =============== GLOBAL HOTKEYS ===============
@@ -25,30 +25,35 @@ Now go start editing and enjoy the boost to your productivity!
 
 ; =============== YOUR CONTEXT APP ===============
 ; ---------EXAMPLE--------, you can edit freely
-#If app("notepad") ; use window spy and look for app.exe, write your app only
-	Numpad1::text("Hello World!")
- Numpad2::combo("^s") ; save
+#If app("notepad")  ; Use Window Spy to find the "ahk_exe" name for your app
+Numpad1::text("Hello World!")
+Numpad2::combo("^s") ; save
 
-
+; Immediate add more, see example of my script if you are not sure
+#If app("YourApp")
+; Your next hotkeys for this app goes here
 
 ; =========== HOTKEYS TEMPLATE ==============
-; key::send("Action") ; Basic single key trigger (loop, not hold)
+; Tap a key (will auto-repeat if you hold the trigger, but isn't a true "hold").
+; key::send("Action")
 
-; Trigger::combo("^c") ; combination keys, this example sends Ctrl+c
+; Send a key combination (good for shortcut)
+; key::combo("^c") ; combination keys, this example sends Ctrl+c
 
 
 ;------- Hold & Release -------
 ; Must be used as pair
-; Trigger::down("Action") Simulate key hold
-; $*Trigger Up::up("Action") Simulate key Release
+; key::down("Action") Simulate key hold
+; $*key Up::up("Action") Simulate key Release
 
 
 ;--------Send Text-------
-; Trigger::text("I am bald")
+; key::text("I am bald")
 
 
-; If you ran out of hotkey, be creative
-; TriggerA & TriggerB::send("action")
-; Since the key reads from left to right, it affect on how you press it
+; If you run out of hotkey, be creative
+; The order matters: Hold the first key, then press the second to trigger it.
+; keyA & keyB::send("action")
+
 
 ; Still confused? Right-click tray icon and hit "Help" for the documentation
