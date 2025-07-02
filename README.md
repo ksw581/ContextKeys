@@ -48,7 +48,7 @@ This script is written for **AutoHotkey v1.1** and is not compatible with v2.
 Editing the script is straightforward. You define "contexts" for your applications and assign new behaviors to keys within that context. The core of the script is the `app()` function. Use it with `#If` to create your hotkeys.
 
 ```autohotkey
-#Include bin\engine.ahk
+#Include lib\core\engine.ahk
 
 ; === GLOBAL HOTKEYS (Work Everywhere) ===
 ; You can just write your global customization right away
